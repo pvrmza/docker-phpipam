@@ -1,0 +1,6 @@
+TZ=America/Argentina/Mendoza
+#
+MYSQL_DATABASE=phpipam
+MYSQL_PASSWORD=ChangeIT
+MYSQL_ROOT_PASSWORD=ChangeIT.ChangeIT
+MYSQL_USER=phpipam

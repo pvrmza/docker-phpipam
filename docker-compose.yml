@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  app:
+    image: pvrmza/phpipam
+    env_file:
+      - .env_phpipam
+    depends_on:
+      - db
+    links:
+      - db 
+
+  db:
+    image: mariadb:latest
+    env_file:
+      - .env_phpipamdb
+    restart: unless-stopped
+    volumes:
+      - phpipam-db-data:/var/lib/mysql
+
+volumes:
+  phpipam-db-data:
