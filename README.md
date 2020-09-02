@@ -21,9 +21,10 @@ Site: [phpIPAM homepage](http://phpipam.net)
 - [x] Proxy support and URL setting from enviroment 
 
 ### OTP Password
-The password for the Admin user is ChangeIT and must be changed when logging in for the first time
+The initial password for Admin is ChangeIT and must be changed when logging in for the first time
 
 User: Admin
+
 Pass: ChangeIT
 
 
