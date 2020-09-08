@@ -27,7 +27,7 @@ COPY files/cron-phpipam /etc/cron.d/phpipam
 COPY files/supervisord.conf /etc/supervisord.conf
 COPY files/foreground.sh /etc/foreground.sh
 
-RUN echo -e "TLS_REQCERT\tnever" >> /etc/ldap/ldap.conf && \
+RUN echo "TLS_REQCERT never" >> /etc/ldap/ldap.conf && \
     chmod +x /etc/foreground.sh
 
 #
