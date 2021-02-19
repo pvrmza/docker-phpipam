@@ -31,9 +31,9 @@ RUN echo "TLS_REQCERT never" >> /etc/ldap/ldap.conf && \
     chmod +x /etc/foreground.sh
 
 #
-RUN wget -c https://github.com/phpipam/phpipam/releases/download/v1.4.1/phpipam-v1.4.1.tgz -O /tmp/phpipam-v1.4.1.tgz && \
-    cd /var/www && tar zxvf /tmp/phpipam-v1.4.1.tgz && mv html html.old && mv phpipam html && chown root.root html -R && \
-    rm -rf /tmp/phpipam-v1.4.1.tgz && \
+RUN wget -c https://github.com/phpipam/phpipam/releases/download/v1.4.2/phpipam-v1.4.2.tgz -O /tmp/phpipam.tgz && \
+    cd /var/www && tar zxvf /tmp/phpipam.tgz && mv html html.old && mv phpipam html && chown root.root html -R && \
+    rm -rf /tmp/phpipam.tgz && \
     ln -s /var/www/html/config.docker.php /var/www/html/config.php && \
     cd /var/www/html/ && find . -type f -exec chmod 0644 {} \; && find . -type d -exec chmod 0755 {} \; && \
     chown www-data.www-data /var/www/html/css/images/logo -R 

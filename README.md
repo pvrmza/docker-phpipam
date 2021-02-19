@@ -11,7 +11,7 @@ Site: [phpIPAM homepage](http://phpipam.net)
 
 
 ## Version/TAG
-* lastet ( phpipam v1.4.1 build 20200902)
+* lastet ( phpipam v1.4.2 build 20210219)
 
 ## Features
 - [x] Unattended deploy
